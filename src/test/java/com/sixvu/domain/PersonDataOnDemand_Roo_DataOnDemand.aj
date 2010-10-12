@@ -43,6 +43,7 @@ privileged aspect PersonDataOnDemand_Roo_DataOnDemand {
             paypalEmail  = paypalEmail.substring(0, 255);
         }
         obj.setPaypalEmail(paypalEmail);
+        obj.setStatus(com.sixvu.types.Enabled.class.getEnumConstants()[0]);
         java.lang.String userName = "userName_" + index;
         if (userName.length() > 32) {
             userName  = userName.substring(0, 32);

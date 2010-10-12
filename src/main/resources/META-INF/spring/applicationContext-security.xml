@@ -10,7 +10,7 @@
     <http auto-config="true" use-expressions="true">
     	<form-login login-processing-url="/resources/j_spring_security_check" login-page="/login" authentication-failure-url="/login?login_error=t"/>
         <logout logout-url="/resources/j_spring_security_logout"/>
-        
+        <remember-me data-source-ref="dataSource"/>
         <!-- Configure these elements to secure URIs in your application -->
         <intercept-url pattern="/choices/**" access="hasRole('ROLE_ADMIN')"/>
         <intercept-url pattern="/video/**" access="hasRole('ROLE_USER')" />
@@ -25,8 +25,8 @@
     	<authentication-provider>
     		<!--<password-encoder hash="md5"/> -->
 	    	<jdbc-user-service data-source-ref="dataSource" 
-	    		authorities-by-username-query="select user_name as username, authority from person where user_name=?"
-	    		users-by-username-query="select user_name as username, pass_word as password, 1 as enabled from person where user_name=?"/>
+	    		authorities-by-username-query="select user_name as username, authority from person where status = 'ENABLED' and user_name=?"
+	    		users-by-username-query="select user_name as username, pass_word as password, 1 as enabled from person where status = 'ENABLED' and user_name=?"/>
     	</authentication-provider>
 	</authentication-manager>
 

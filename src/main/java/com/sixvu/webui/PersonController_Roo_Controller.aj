@@ -5,6 +5,7 @@ package com.sixvu.webui;
 
 import com.sixvu.domain.Person;
 import com.sixvu.types.Authority;
+import com.sixvu.types.Enabled;
 import com.sixvu.types.Gender;
 import java.lang.Long;
 import java.lang.String;
@@ -100,6 +101,11 @@ privileged aspect PersonController_Roo_Controller {
     @ModelAttribute("authoritys")
     public Collection<Authority> PersonController.populateAuthoritys() {
         return Arrays.asList(Authority.class.getEnumConstants());
+    }
+    
+    @ModelAttribute("enableds")
+    public Collection<Enabled> PersonController.populateEnableds() {
+        return Arrays.asList(Enabled.class.getEnumConstants());
     }
     
     @ModelAttribute("genders")

@@ -4,6 +4,7 @@
 package com.sixvu.domain;
 
 import com.sixvu.types.Authority;
+import com.sixvu.types.Enabled;
 import com.sixvu.types.Gender;
 import java.lang.String;
 import java.util.Date;
@@ -72,6 +73,14 @@ privileged aspect Person_Roo_JavaBean {
     
     public void Person.setAuthority(Authority authority) {
         this.authority = authority;
+    }
+    
+    public Enabled Person.getStatus() {
+        return this.status;
+    }
+    
+    public void Person.setStatus(Enabled status) {
+        this.status = status;
     }
     
 }

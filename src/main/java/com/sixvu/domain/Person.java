@@ -14,6 +14,7 @@ import com.sixvu.types.Gender;
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
 import com.sixvu.types.Authority;
+import com.sixvu.types.Enabled;
 
 @Entity
 @RooJavaBean
@@ -53,4 +54,8 @@ public class Person {
     @NotNull
     @Enumerated(EnumType.STRING)
     private Authority authority;
+
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    private Enabled status;
 }

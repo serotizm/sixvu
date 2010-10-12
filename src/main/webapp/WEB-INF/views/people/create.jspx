@@ -11,6 +11,7 @@
         <field:textarea field="paypalEmail" id="c_com_sixvu_domain_Person_paypalEmail" required="true" z="UWg5MQOjve1JcO/U/jqno1W7gqQ="/>
     
     <field:select field="authority" id="c_com_sixvu_domain_Person_authority" items="${authoritys}" path="authoritys" required="true" z="lsNTW8Wm8ybwjpof2Cfe2HUlL8M="/>
+    <field:select field="status" id="c_com_sixvu_domain_Person_status" items="${enableds}" path="enableds" required="true" z="/EGKbBfoMuov4ys1KPkHBFTSTXU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_sixvu_domain_Person" render="${not empty dependencies}" z="9zP5pivcFRtHK/M1bh6rSmW4A+A="/>
 </div>

@@ -18,7 +18,8 @@ privileged aspect Person_Roo_ToString {
         sb.append("Gender: ").append(getGender()).append(", ");
         sb.append("Country: ").append(getCountry()).append(", ");
         sb.append("PaypalEmail: ").append(getPaypalEmail()).append(", ");
-        sb.append("Authority: ").append(getAuthority());
+        sb.append("Authority: ").append(getAuthority()).append(", ");
+        sb.append("Status: ").append(getStatus());
         return sb.toString();
     }
     

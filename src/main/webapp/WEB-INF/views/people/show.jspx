@@ -11,5 +11,6 @@
         <field:display field="paypalEmail" id="s_com_sixvu_domain_Person_paypalEmail" object="${person}" z="PXMkZ+EM8B0r7EmwWcbNJbZXi98="/>
     
     <field:display field="authority" id="s_com_sixvu_domain_Person_authority" object="${person}" z="k2qc4gUSrD0YaQI2XgkJ8UHiu1Q="/>
+    <field:display field="status" id="s_com_sixvu_domain_Person_status" object="${person}" z="QtgzJZFnHgcMhQ90KZxvuWrWMcM="/>
     </page:show>
 </div>
