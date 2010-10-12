@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sixvu_domain_Person" items="${people}" z="8L3neh4yI/b5ZJV4M/vOR96ohcQ=">
+        <table:table data="${people}" id="l_com_sixvu_domain_Person" path="/people" z="OVAtb5bJWbloo5G1ngvFVHiV93w=">
+            <table:column id="c_com_sixvu_domain_Person_userName" property="userName" z="n95SpLBVoA9fyBbL7icp/6Qe9i0="/>
+            <table:column id="c_com_sixvu_domain_Person_email" property="email" z="fwoGxfKFyytZHPSDYTqS2WLHY5c="/>
+            <table:column id="c_com_sixvu_domain_Person_passWord" property="passWord" z="SABwANnLyGVrbNVa7vR5i5ZLD2M="/>
+            <table:column id="c_com_sixvu_domain_Person_birthDate" property="birthDate" z="+RqHJA/NoyJrfagEny0a+nEZWy0="/>
+            <table:column id="c_com_sixvu_domain_Person_gender" property="gender" z="8x07lL43KJe0tAGplUhOg5AT7/Q="/>
+            <table:column id="c_com_sixvu_domain_Person_country" property="country" z="yvPMeUkP118BtO1PWuVos/9ZVA4="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sixvu_domain_Video" items="${videos}" z="6vRfsGjutK6xdX0lIdqbiIAM2R8=">
+        <table:table data="${videos}" delete="false" id="l_com_sixvu_domain_Video" path="/videos" z="ZveYDo58KbIQ6O9KgcAoKheyn/A=">
+            <table:column id="c_com_sixvu_domain_Video_title" property="title" z="Zuno0w/I9euAFMyt4Exwj0aeVPY="/>
+            <table:column id="c_com_sixvu_domain_Video_dateAdd" property="dateAdd" z="5cIMayN1sssRJEIv2F8bczu1i9g="/>
+            <table:column id="c_com_sixvu_domain_Video_Person" property="person" z="QAvd8D8+2f1WOWY+hPfvgEdjt5s="/>
+        </table:table>
+    </page:list>
+</div>

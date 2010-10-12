@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show delete="false" id="ps_com_sixvu_domain_Video" object="${video}" path="/videos" z="4Ug3exyI3REjG5cB7gCNLe80blg=">
+        <field:display field="title" id="s_com_sixvu_domain_Video_title" object="${video}" z="Okh5gDEBQx71Ix+53jvwMInpitQ="/>
+        <field:display date="true" dateTimePattern="${video_dateadd_date_format}" field="dateAdd" id="s_com_sixvu_domain_Video_dateAdd" object="${video}" z="7A72sEfvx5eZAPavKbW/5fGF4Gk="/>
+        <field:display field="person" id="s_com_sixvu_domain_Video_Person" object="${video}" z="b+7XchUZ+UPUJT25mhKZhOpIluc="/>
+    </page:show>
+</div>

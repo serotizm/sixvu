@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sixvu_domain_Person" object="${person}" path="/people" z="IymDisLtKFgLVdlkDxMnbsPn9EY=">
+        <field:display field="userName" id="s_com_sixvu_domain_Person_userName" object="${person}" z="mYFfx1WqdIbXyuwjXHSRe9XUzoM="/>
+        <field:display field="email" id="s_com_sixvu_domain_Person_email" object="${person}" z="o348JCBiZKTrjBKNH5N7zfUfHio="/>
+        <field:display field="passWord" id="s_com_sixvu_domain_Person_passWord" object="${person}" z="ENR5upQK6D4/IRVB0fbI4zfXTAA="/>
+        <field:display date="true" dateTimePattern="${person_birthdate_date_format}" field="birthDate" id="s_com_sixvu_domain_Person_birthDate" object="${person}" z="mUDJrInoPnNemlT4NnjUgcLdfxY="/>
+        <field:display field="gender" id="s_com_sixvu_domain_Person_gender" object="${person}" z="qria2aUk9z2QoASSWxMubHbIraU="/>
+        <field:display field="country" id="s_com_sixvu_domain_Person_country" object="${person}" z="WpbEHG45XccCIlSqMzS7iiumnag="/>
+        <field:display field="paypalEmail" id="s_com_sixvu_domain_Person_paypalEmail" object="${person}" z="PXMkZ+EM8B0r7EmwWcbNJbZXi98="/>
+    
+    <field:display field="authority" id="s_com_sixvu_domain_Person_authority" object="${person}" z="k2qc4gUSrD0YaQI2XgkJ8UHiu1Q="/>
+    </page:show>
+</div>

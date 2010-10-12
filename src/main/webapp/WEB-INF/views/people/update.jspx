@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_sixvu_domain_Person" modelAttribute="person" path="/people" z="Xl2u40Q5GGoZ7U+5cAoZiBwCSVY=">
+        <field:textarea field="userName" id="c_com_sixvu_domain_Person_userName" required="true" z="BpzdaLejTYgiOEbCUcJqP6tqaBM="/>
+        <field:textarea field="email" id="c_com_sixvu_domain_Person_email" required="true" validationMessageCode="field_invalid_email" z="AsRoYPI5+/4YG66sY3DVJ8Qm4zQ="/>
+        <field:textarea field="passWord" id="c_com_sixvu_domain_Person_passWord" required="true" z="A9hYHFbtebd3ulIkCUB7/H3u0hQ="/>
+        <field:datetime dateTimePattern="${person_birthdate_date_format}" field="birthDate" id="c_com_sixvu_domain_Person_birthDate" required="true" z="6NQq0w2Ehy00dIUJQFti1M4QZGg="/>
+        <field:select field="gender" id="c_com_sixvu_domain_Person_gender" items="${genders}" path="genders" required="true" z="r03Yw/5MnHybm2I5w60gOjzkQrU="/>
+        <field:input field="country" id="c_com_sixvu_domain_Person_country" max="2" min="2" required="true" z="UJ/KBdjBVJ90QO5q6z/fn87RCBw="/>
+        <field:textarea field="paypalEmail" id="c_com_sixvu_domain_Person_paypalEmail" required="true" z="UWg5MQOjve1JcO/U/jqno1W7gqQ="/>
+    
+    <field:select field="authority" id="c_com_sixvu_domain_Person_authority" items="${authoritys}" path="authoritys" required="true" z="lsNTW8Wm8ybwjpof2Cfe2HUlL8M="/>
+    </form:update>
+</div>
